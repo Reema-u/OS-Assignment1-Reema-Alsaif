@@ -29,14 +29,16 @@ class Process implements Runnable {
     private int burstTime; // Total time the process requires to complete (in milliseconds)
     private int timeQuantum; // Time slice (time quantum) allowed per CPU access (in milliseconds)
     private int remainingTime; // Time left for the process to finish its execution
-
+    private int priority;
+    
     // Constructor to initialize the process with name, burst time, and time quantum
-    public Process(String name, int burstTime, int timeQuantum) {
+   public Process(String name, int burstTime, int timeQuantum, int priority) {
         this.name = name;
         this.burstTime = burstTime;
         this.timeQuantum = timeQuantum;
         this.remainingTime = burstTime; // Initially, remaining time is equal to the burst time
-    }
+        this.priority = priority;
+}
 
     // This method will be called when the thread for this process is started
     @Override
@@ -132,6 +134,9 @@ class Process implements Runnable {
     public int getBurstTime() {
         return burstTime;
     }
+    public int getPriority() {
+    return priority;
+}
 
     public int getRemainingTime() {
         return remainingTime;
@@ -202,7 +207,7 @@ public class SchedulerSimulation {
             // Add the process to the ready queue and the map
             addProcessToQueue(process, processQueue, processMap);
         }
-        
+
         // Start of the scheduler simulation
         System.out.println(Colors.BOLD + Colors.GREEN + 
                           "╔════════════════════════════════════════════════════════════════════════════════╗" + 
