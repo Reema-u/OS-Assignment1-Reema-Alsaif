@@ -149,6 +149,7 @@ class Process implements Runnable {
 }
 
 public class SchedulerSimulation {
+    private static int contextSwitchCount = 0;
     public static void main(String[] args) {
         // ⚠️ IMPORTANT: Put your student ID here to seed the random number generator
         // This makes your output unique to you - DO NOT forget to change this!
@@ -202,7 +203,8 @@ public class SchedulerSimulation {
             int burstTime = timeQuantum/2 + random.nextInt(2 * timeQuantum + 1);
             
             // Create a new process object with a unique name, burst time, and the defined time quantum
-            Process process = new Process("P" + i, burstTime, timeQuantum);
+         int priority = 1 + random.nextInt(10);
+Process process = new Process("P" + i, burstTime, timeQuantum, priority);
             
             // Add the process to the ready queue and the map
             addProcessToQueue(process, processQueue, processMap);
@@ -242,6 +244,7 @@ public class SchedulerSimulation {
             System.out.println(Colors.BOLD + Colors.MAGENTA + "└" + "─".repeat(79) + Colors.RESET + "\n");
             
             // Start the thread, which will run the process for one time quantum
+            contextSwitchCount++;
             currentThread.start();
             
             try {
@@ -269,7 +272,7 @@ public class SchedulerSimulation {
                 }
             }
         }
-        
+        System.out.println(Colors.YELLOW + "Context Switches: " + contextSwitchCount + Colors.RESET);
         // End of the scheduler simulation
         System.out.println(Colors.BOLD + Colors.BRIGHT_GREEN + 
                           "╔════════════════════════════════════════════════════════════════════════════════╗" + 
