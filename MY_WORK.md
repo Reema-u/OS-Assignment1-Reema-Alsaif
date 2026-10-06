@@ -197,17 +197,22 @@ I reviewed my code and answered the questions in my own words.
 2 hours
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**:
+### Entry 5 - October 7, 2026
 
-**Details**:
+**What I did:**  
+I recorded the demonstration video for the assignment and reviewed my work before submission.
 
-**Challenges**:
+**Details:**  
+I showed the main features, the program execution, and my Git history in the video.
 
-**Solution**:
+**Challenges:**  
+I felt a little nervous because it was my first time making a video like this.
 
-**Time spent**:
+**Solution:**  
+I reviewed the steps and recorded the video again until I was satisfied with it.
 
+**Time spent:**  
+1 hour
 ---
 
 ### Entry 6 - [Optional - Date and Time]
