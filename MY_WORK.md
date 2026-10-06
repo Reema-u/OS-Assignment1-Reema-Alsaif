@@ -212,34 +212,22 @@ I felt a little nervous because it was my first time making a video like this.
 I reviewed the steps and recorded the video again until I was satisfied with it.
 
 **Time spent:**  
-1 hour
----
-
-### Entry 6 - [Optional - Date and Time]
-**What I did**:
-
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
-
+2 hour
 ---
 
 ## Development Log Summary
+> 💡 **TIP:** Fill this in last, after all entries are written.
 
-> 💡 **TIP:** Fill this in **last**, after all entries are written.
+**Total time spent on assignment:** 10-11 hours
 
-**Total time spent on assignment**: [X hours]
+**Most challenging part:**  
+The most challenging part was understanding the existing code and adding the three features without affecting the original Round-Robin scheduling.
 
-**Most challenging part**:
+**Most interesting learning:**  
+The most interesting thing I learned was how Round-Robin scheduling works with threads and how processes take turns using the CPU.
 
-**Most interesting learning**:
-
-**What I would do differently next time**:
-
+**What I would do differently next time:**  
+Next time, I would start earlier and review the code before making changes so I can work more efficiently.
 ---
 
 # Part B: Reflection (0.5 mark)
